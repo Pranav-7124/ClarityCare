@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read/write access to price entries
+    match /price_entries/{document} {
+      allow read, write: if true; // For demo purposes - in production, add proper auth
+    }
+    
+    // Allow read access to statistics
+    match /statistics/{document} {
+      allow read: if true;
+      allow write: if true; // For demo purposes
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "claritycare-webapp",
+  "version": "1.0.0",
+  "description": "Clinical-Tech Transparency Platform powered by RunAnywhere SDK + Firebase + Gemini AI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "firebase serve --only hosting",
+    "build": "echo 'Building...'",
+    "deploy": "firebase deploy --only hosting",
+    "init": "firebase init"
+  },
+  "keywords": [
+    "healthcare",
+    "transparency",
+    "firebase",
+    "gemini",
+    "runanywhere"
+  ],
+  "author": "ClarityCare Team",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^13.0.0"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0",
+    "chart.js": "^4.4.0"
+  }
+}
